@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyChurch</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string name="login_edt_email_tel">Teléfono o correo electrónico</string>
+    <string name="login_edt_password">Contraseña</string>
+    <string name="login_btn_iniciar_sesion">Iniciar sesión</string>
+    <string name="login_tv_crearcuenta">Crear cuenta de MyChurch</string>
+    <string name="login_tv_Olvidaste_contraseña">¿Olvidaste tu contraseña?</string>
+</resources>
