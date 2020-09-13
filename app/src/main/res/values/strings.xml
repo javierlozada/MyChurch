@@ -8,4 +8,9 @@
     <string name="login_btn_iniciar_sesion">Iniciar sesión</string>
     <string name="login_tv_crearcuenta">Crear cuenta de MyChurch</string>
     <string name="login_tv_Olvidaste_contraseña">¿Olvidaste tu contraseña?</string>
+    <string name="login_no_tienes_una_cuenta">No tienes una cuenta?</string>
+    <string name="login_enscribirse">Enscribirse</string>
+    <string name="login_contrase_a">Contraseña</string>
+    <string name="login_loguearse_para_conectarse_con_nosotros">Loguearse para conectarse con nosotros</string>
+    <string name="login_bienvenido">Bienvenido!</string>
 </resources>
