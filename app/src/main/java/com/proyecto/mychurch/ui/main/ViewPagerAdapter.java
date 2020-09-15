@@ -36,7 +36,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 2 total pages.
+        // Show n total pages.
         return mFragmentList.size();
     }
 

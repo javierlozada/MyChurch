@@ -17,4 +17,6 @@
     <string name="btn_enscribirse">Enscribirse</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre_iglesia">Nombre iglesia</string>
+    <string name="direccion_iglesia">Direccion iglesia</string>
 </resources>
