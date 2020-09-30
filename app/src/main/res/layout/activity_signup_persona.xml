@@ -4,11 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".Activities.signup_persona">
+
+    <include layout="@layout/actionbar_toolbar"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:orientation="vertical"
         android:layout_margin="30dp">
 
@@ -18,6 +22,7 @@
             app:startIconDrawable="@drawable/ic_baseline_email_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/edt_email"/>
@@ -28,30 +33,64 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/edt_password"/>
+                android:hint="@string/nombre_completo"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
+            app:startIconDrawable="@drawable/ic_baseline_cake_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_cumpleanos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/edt_confirmar_password"/>
+                android:hint="@string/loging_fecha_cumplea_os"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edt_password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_confirmarContra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edt_confirmar_password"
+                android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
-            android:hint="@string/btn_enscribirse"
+            android:id="@+id/btn_registarse"
+            android:text="@string/btn_registrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="15dp"

@@ -3,12 +3,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.Menu">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+       <RelativeLayout
+           android:id="@+id/rellay1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="15dp">
+
+
+           <com.google.android.material.imageview.ShapeableImageView
+               android:id="@+id/imgView_proPic"
+               android:layout_width="45dp"
+               android:layout_height="45dp"
+               android:adjustViewBounds="true"
+               android:scaleType="fitCenter"
+               app:civ_border_width="2dp"
+               android:src="@drawable/perfil"/>
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               android:layout_toRightOf="@+id/imgView_proPic"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/tv_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif-medium"
+                   android:text="Devin Lozada"
+                   android:textColor="@color/black"
+                   android:textSize="17sp" />
+
+
+               <TextView
+                   android:id="@+id/tv_time"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif"
+                   android:text="Ver tu perfil"
+                   android:textColor="@color/grey"
+                   android:textSize="13sp" />
+
+           </LinearLayout>
+       </RelativeLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp">
+
+           <ImageView
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_baseline_build_24"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="20dp"
+               android:text="@string/ayuda_y_soporte_t_cnico"
+               android:textColor="@color/black"
+               android:textStyle="bold"/>
+
+
+       </LinearLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/light_grey"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:layout_marginLeft="10dp"
+               android:src="@drawable/ic_baseline_exit_to_app_24"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="20dp"
+               android:text="@string/cerrar_sesi_n"
+               android:textColor="@color/black"
+               android:textStyle="bold"/>
+
+
+       </LinearLayout>
+
+
+
+
+   </LinearLayout>
 
 </FrameLayout>

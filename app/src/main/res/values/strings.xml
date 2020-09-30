@@ -14,9 +14,20 @@
     <string name="login_contrase_a">Contraseña</string>
     <string name="login_loguearse_para_conectarse_con_nosotros">Loguearse para conectarse con nosotros</string>
     <string name="login_bienvenido">Bienvenido!</string>
-    <string name="btn_enscribirse">Enscribirse</string>
+    <string name="btn_registrarse">Registrarse</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nombre_iglesia">Nombre iglesia</string>
     <string name="direccion_iglesia">Direccion iglesia</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="ayuda_y_soporte_t_cnico">Ayuda y soporte técnico</string>
+    <string name="loging_fecha_cumplea_os">Fecha Cumpleaños</string>
+
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+    <string name="nombre_completo">Nombre Completo</string>
+
 </resources>

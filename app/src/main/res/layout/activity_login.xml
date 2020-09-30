@@ -5,11 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".Activities.Login">
+
+    <include layout="@layout/actionbar_toolbar"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:orientation="vertical"
         android:layout_margin="30dp">
 
@@ -32,7 +36,7 @@
             app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_tel_correo"
+                android:id="@+id/edt_correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/edt_email"
@@ -89,6 +93,7 @@
                 android:text="@string/login_no_tienes_una_cuenta"/>
 
             <TextView
+                android:id="@+id/txt_enscribirse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5sp"
